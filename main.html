@@ -73,7 +73,7 @@
 	const secondHand = document.querySelector('.second-hand');
 const minHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
-const time = document.querySelector('.time');
+// const time = document.querySelector('.time');
 
 function setDate(){
     const now = new Date();
@@ -90,7 +90,7 @@ function setDate(){
     minHand.style.transform = `rotate(${minDegrees}deg)`
     hourHand.style.transform = `rotate(${hourDegrees}deg)`
 
-    time.textContent = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
+    // time.textContent = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
 }
 setInterval(setDate, 1000);
 </script>
